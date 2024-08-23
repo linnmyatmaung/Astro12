@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="astroicon.png">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <!--Start nav bar--> 
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm px-2" id="main">
+        <div class="container">
+            <a class="navbar-brand menuitems" id="logo" href="./index.html"><img src="./image/logonew.png"></a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarNavAltMarkup">
+                  <div class="navbar-nav me-5 fw-bold">
+                    <a href="./index.html" class="nav-link menuitems ps-2">Home</a>
+                    <a href="./aries.html" class="nav-link menuitems ps-2">Zodiac Signs</a>
+                    <a class="menuitems" href="#">
+                      <div class="dropdown">
+                        <a href="#" class="nav-link menuitems mx-2 dropdown-toggle text-white" data-bs-toggle="dropdown">Astrology</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="elements.html"class="dropdown-item">Elements</a></li>
+                          <li><a href="quality/quality.html"class="dropdown-item">Quality</a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a class="menuitems" href="#">
+                      <div class="dropdown">
+                        <a href="#" class="nav-link menuitems mx-2 dropdown-toggle text-white" data-bs-toggle="dropdown">Items</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="gems.html"class="dropdown-item">Crystals</a></li>
+                          <li><a href="color.html"class="dropdown-item">Colors</a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a class="nav-link menuitems ps-2" href="./contact.html">Contact</a>
+                  </div>
+                  <div class="icons d-flex">
+                    <a class="nav-link menuitems me-3" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a class="nav-link menuitems me-3" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a class="nav-link menuitems me-3" href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a class="nav-link menuitems m3-3" href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+                  </div>
+                </div>
+            </div>
+        </nav>
+    <!--End nav bar-->
+
+    <!-- Contact Section Start -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="title text-center">
+                    <h1>Contact Us</h1>
+                    <h3>We'd like to hear from you</h3>
+                    <p>We're here for you.If you have any further comments, please let us know.</p>
+                </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="contact-contaier">
+                    <div class="d-flex contact-item mb-4">
+                        <div class="icon text-primary fs-5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <div class="address fs-5">Address</div>
+                            <div class="text-muted">University of Technology (Yatanarpon Cybercity)</div>
+                        </div>
+                    </div>
+                    <div class="d-flex contact-item mb-4">
+                        <div class="icon text-primary fs-5">
+                            <i class="fa-solid fs-4 fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <div class="address fs-5">Phone</div>
+                            <div class="text-muted">959-412-2015</div>
+                        </div>
+                    </div>
+                    <div class="d-flex contact-item mb-4">
+                        <div class="icon text-primary fs-5">
+                            <i class="fa-solid fa-envelope fs-4"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <div class="address fs-5">Email</div>
+                            <div class="text-muted">astroxii371@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                              <label for="" class="fw-bold">Name :</label>
+                                <input id="name" type="text" placeholder="Enter your name" class="form-control form-control-lg fs-6 border-0">
+                                <span id="nameErr" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-6 ">
+                              <label for="" class="fw-bold">Email : </label>
+                                <input id="email" type="email" placeholder="Enter your email" class="form-control form-control-lg fs-6 border-0">
+                                <span id="mailErr" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                              <label for="" class="fw-bold">Commment :</label>
+                                <textarea name="" id="comment" cols="30" rows="3" class="form-control form-control-lg fs-6 border-0" placeholder="Comments"></textarea>
+                                <span id="commentErr" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="submitbtn">
+                              <button id="submit" type="submit" class="btn btn-primary px-3 me-3">Submit</button>
+                            </div>
+                            <div class="restbtn">
+                                <button class="btn btn-primary px-3 mx-3" type="reset" id="reset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section End -->
+
+    <!-- Start Footer Section -->
+
+    <div id="container-fluid">
+        <div class="row py-3">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="logo">
+              <img src="./image/logo.png" alt="">
+            </div>
+            <div class="link">
+              <a href="./index.html">Home</a>
+              <a href="./aries.html">Zodiac Signs</a>
+              <a href="./elements.html">Astrology</a>
+              <a href="./gems.html">Items</a>
+              <a href="./contact.html">Contact</a>
+            </div>
+            <div class="follow">
+              <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-5 ">
+            <div class="para">
+              <h3>Join Our Daily Overview</h3>
+              <blockquote>Your Astrological overview guides you on what to look
+                out for and how to act in tune with the stars and planets each day.
+              </blockquote>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3" id="last">
+            <div class="privacy"> 
+              <a href="privacy.com">Privacy Policy</a><br>
+              <a href="cookies.com">Cookies</a>
+            </div>
+            <div class="like">
+              <strong>Was this page helpful?</strong>
+              <i class="fa-regular fa-thumbs-up"></i>
+              <i class="fa-regular fa-thumbs-down"></i>
+            </div>
+            <div class="cross">
+              <p> <i class="fa-regular fa-circle-xmark"></i> Do not selling My personal info!</p>
+            </div>
+            <div class="copy">
+            <i>&copy; Copyright-2023 -All right reserved.</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer Section -->
+</body>
+<script src="./contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>

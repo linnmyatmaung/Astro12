@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+/* NavBar Start */
+
+#main{
+    color:rgb(233, 238, 247);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), hsl(203, 100%, 13%, 1)); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), hsl(180, 1%, 23%));
+}
+
+.container .navbar-brand img{
+    width:180px;
+}
+
+.icons{
+    margin-right: 30px;
+}
+
+.icons a{
+    padding: 0 10px;
+    font-size: 20px;
+}
+.menuitems{
+    color:white;
+}
+.menuitems:hover {
+    color: #1aaee8;
+  }
+
+/* NavBar End */
+
+/* Contact Section Start */
+
+.container-fluid{
+    background-color:rgb(230, 230, 242);
+}
+.container-fluid .row .col-lg-8{
+    margin-top: 30px;
+}
+
+.container-fluid .title{
+    padding: 50px 10px;
+}
+.contact-contaier{
+    padding: 0 30px;
+}
+.contact-form{
+    padding: 0 20px;
+}
+/* Contact Section End */
+
+  /* Start Footer */
+  #container-fluid{
+    width: 100%;
+    height: auto;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(7, 5, 16);
+}
+
+#container-fluid .row{
+    padding: 20px;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.link{
+    padding-top: 10px;
+}
+
+.link a{
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(244, 245, 245);
+    font-style: italic;
+    font-size: 16px;
+}
+.link a:hover{
+    color: #22aca7;
+}
+
+.follow{
+    padding-top: 30px;
+}
+.follow a{
+    color: rgb(250, 244, 246);
+    /* margin-top: 20px; */
+    margin-right: 10px;
+    font-size:20px;
+}
+.follow a:hover{
+    color:rgb(60, 137, 181);
+}
+
+#last{
+    align-items: center;
+    justify-content: center;
+}
+
+.para{
+    margin-top: 25px;
+    padding: 5px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.para h3{
+    text-align: left;
+}
+
+.privacy{
+    padding: 5px;
+    margin-top: 25px;
+}
+.privacy a{
+    text-decoration: none;
+    color: rgb(241, 239, 247);
+}
+.privacy a:hover{
+    color: rgb(23, 14, 126);
+}
+.like{
+    padding: 5px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+.like i{
+    font-size: 20px;
+}
+.like .fa-thumbs-up:hover{
+    color:aquamarine;
+}
+.like .fa-thumbs-down:hover{
+    color:rgb(231, 61, 61);
+}
+.cross{
+    padding: 5px;
+    color: aliceblue;
+}
+.copy{
+    /* margin-top: 120px; */
+    color: rgb(250, 251, 252);
+}
+
+
+/* End Footer */
+
+/* ------------------------For Desktop------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+
+/* NavBar Start */
+
+#main{
+    color:rgb(233, 238, 247);
+    /* background:rgb(6, 52, 153); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), hsl(180, 1%, 23%));
+}
+
+.container .navbar-brand img{
+    width:180px;
+}
+
+.icons{
+    margin-right: 0;
+}
+
+.icons a{
+    padding: 0 5px;
+    font-size: 20px;
+}
+.menuitems{
+    color:white;
+}
+.menuitems:hover {
+    color: #1aaee8 !important;
+}
+
+/* NavBar End */
+
+/* Contact Section Start */
+
+.container-fluid{
+    background-color:rgb(230, 230, 242);
+    padding-bottom: 100px;
+    height:90vh;
+}
+
+.container-fluid .title{
+    padding: 50px 10px;
+}
+
+    /* Contact Section End */
+
+/* Start Footer */
+
+#container-fluid{
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(7, 5, 16);
+}
+
+#container-fluid .row{
+    padding: 10px 20px;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.link{
+     padding-top: 10px;
+}
+
+.link a{
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(244, 245, 245);
+    font-style: italic;
+    font-size: 1.2em;
+}
+.link a:hover{
+    color: #22aca7;
+}
+
+.follow{
+    padding-top: 100px;
+}
+
+.follow a{
+    color: rgb(250, 244, 246);
+    margin-right: 10px;
+    font-size:20px;
+}
+.follow a:hover{
+    color:rgb(60, 137, 181);
+}
+
+.para{
+    margin-top: 25px;
+    padding: 5px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.para h3{
+    text-align: left;
+}
+
+.privacy{
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.privacy a{
+    text-decoration: none;
+    color: rgb(241, 239, 247);
+}
+
+.privacy a:hover{
+    color: rgb(23, 14, 126);
+}
+
+.like{
+    padding: 5px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.like i{
+    font-size: 20px;
+}
+
+.like .fa-thumbs-up:hover{
+    color:aquamarine;
+}
+
+.like .fa-thumbs-down:hover{
+    color:rgb(231, 61, 61);
+}
+
+.cross{
+    padding: 5px;
+    color: aliceblue;
+}
+
+.copy{
+    /* margin-top: 120px; */
+    color: rgb(250, 251, 252);
+}
+
+}
+
+
+/* End Footer */

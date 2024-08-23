@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container-fluid{
+    padding: 20px;
+}
+
+.container-fluid .title{
+    margin: 20px;
+    background-color:#07083b;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+.container-fluid h1{
+    padding: 10px;
+    color: white;
+}
+
+.container-fluid .cardial_info p{
+    font-family: 'Cardo', serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height:2em;
+}
+
+.container-fluid .cardial_info a{
+    text-decoration:none;
+}
+
+
+.container-fluid .info .row p{
+    padding: 30px;
+   
+}
+
+.container-fluid .info .row img{
+    width: 60%;
+    height:auto;
+}
+
+.info .col-md-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .col-md-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info .col-md-8 p{
+    font-size: 20px;
+    text-align: justify;
+    line-height:1.5em;
+    font-family: 'Cardo', serif;
+}
+
+.container-fluid h1{
+    animation: text 3s 1;
+}
+
+@keyframes text{
+    0%{
+      letter-spacing: 5px;
+    }
+    30%{
+      color:#4d6ab9;
+    }
+    85%{
+      letter-spacing: normal;
+      color:#17b5f4;
+    }
+  }
+  .back a{
+    color: rgb(24,24,187);
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .back{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+  }
+  .back a:hover{
+    color:rgb(11,11,11);
+  }
+
+@media only screen and(min-height:810px){
+    .info .col-md-8 p{
+        font-size: 20px;
+        text-align: justify;
+        line-height:2em;
+        font-family: 'Cardo', serif;
+    }
+}
+
+
+
+@media(min-height:1000px){
+    .info .row .col-md-4 img{
+        width: 300px;
+    }
+}

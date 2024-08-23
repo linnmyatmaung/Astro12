@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#main{
+    background-color:rgb(88, 93, 227);
+    width: 100%;
+    height:auto;
+    /* z-index: 10; */
+}
+/* #info{
+    background-color: antiquewhite;
+} */
+
+.game{
+    height: 0;
+    /* padding: 75px; */
+    border-radius: 20px;
+    
+}
+
+.game .gamebox{
+    height: 900px;
+    box-shadow: rgba(0,0, 0, 0.6) 0px 22px 70px 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.game .gamebox .back{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.game .image img{
+    width: 200px;
+}
+
+.game .board{
+    /* border: 1px dashed gray; */
+    border-radius: 20px;
+    padding: 22px;
+}
+.game .board #game #btn,#reset{
+    margin:5px 10px;
+}
+
+.game .board #game #btn{
+    background-color:white;
+}
+
+.game .board #game #guess,#reset{
+    border-radius: 5px;
+}
+
+.game .board h3,h2{
+    letter-spacing: 1px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.game .board .guess{
+    border-color: #581c87;
+    padding: 10px;
+}
+
+.game .board .guess :focus{
+    outline: none;
+}
+
+.game .board #btn,#reset{
+    padding: 10px 0;
+    border-color: #581c87;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.game .gamebox .board #game #btn:hover{
+    background: rgba(69, 188, 104, 0.893);
+    color:black;
+    font-weight:bold;
+}
+
+.game .gamebox .board #game #reset:hover{
+    background: rgb(211, 54, 54);
+    color:white;
+    font-weight:bold;
+}
+
+.game .gamebox .back a{
+    color: rgb(24, 24, 187); 
+    font-size: larger;
+    text-decoration: none;
+}
+.game .gamebox .back{
+    color: aliceblue;
+}
+.game .gamebox .back a:hover{
+    color: rgb(11, 11, 11);
+}
+
+
+@media only screen and (min-width:768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .game{
+        /* box-shadow: rgba(0,0, 0, 0.6) 0px 22px 70px 5px; */
+        /* margin: 0 20px; */
+        border-radius: 20px;
+    }
+
+    .game .gamebox{
+        height: 700px;
+        box-shadow: rgba(0,0, 0, 0.6) 0px 22px 70px 5px;
+        border-radius: 10px;
+        /* padding: 0 20px; */
+    }
+
+    .game .board{
+        border-radius: 20px;
+        padding: 22px;
+    }
+
+    .game .board #game #guess,#reset{
+        border-radius: 5px;
+    }
+
+    .game .board h3,h2{
+        letter-spacing: 2px;
+    }
+
+    .game .board .guess{
+        border-color: #581c87;
+    }
+
+    .game .board .guess :focus{
+        outline: none;
+    }
+
+    .game .board #btn,#reset{
+        padding: 10px 0;
+        border-color: #581c87;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .game .gamebox .board #game #btn:hover{
+        background: rgba(69, 188, 104, 0.893);
+        color:black;
+        font-weight:bold;
+    }
+
+    .game .gamebox .board #game #reset:hover{
+        background: rgb(211, 54, 54);
+        color:white;
+        font-weight:bold;
+    }
+    
+    .game .gamebox .back a{
+        color: rgb(24, 24, 187); 
+        font-size: larger;
+        text-decoration: none;
+    }
+    .game .gamebox .back{
+        color: aliceblue;
+    }
+    .game .gamebox .back a:hover{
+        color: rgb(11, 11, 11);
+    }
+
+}
+
+@media(min-height: 1000px){
+    #info .gamebox{
+        width: 80%;
+        margin: 150px 20px 0 20px;
+        
+    }
+}

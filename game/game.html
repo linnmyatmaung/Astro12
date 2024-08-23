@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../astroicon.png">
+    <link rel="stylesheet" href="./game.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="main">
+
+    <div>
+        <div class="row game justify-content-center" id="info">
+            <div class="col-lg-7 gamebox">
+                <div class="back"><a href="../index.html"><i class="fa-solid fa-backward"></i> Back To Previous Page</a> </div>
+                <div class="image text-center">
+                    <img src="gift.gif"  alt="ig1">
+                </div>
+                <div class="board text-center">
+                    <h2>Let's check the present related to your birthdate</h2>
+                    <h3>Please Enter your birthdate!!</h3>
+                    <div id="game" class="row d-flex justify-content-center">
+                        <input type="number" id="guess" name="guessnumber" class="guess col-md-6 col-lg-5 mx-1 py-sm-2" placeholder="Enter your birthdate"  >
+                        <input type="button" id="btn" value="Guess" class="btn col-4 col-md-2 col-lg-2 col-xl-1 mx-1" onclick="show()">    
+                        <input type="button" id="reset" class="col-4 col-md-2 col-lg-2 col-xl-1 mx-1" onclick="change()" value="Reset">      
+                        <blockquote id="message"></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./game.js"></script>
+</html>

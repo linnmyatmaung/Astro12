@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro</title>
+    <link rel="shortcut icon" type="image/x-icon" href="astroicon.png">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body>
+    
+  <!---------------------- Start nav bar -------------------> 
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm px-2" id="main">
+    <div class="container">
+        <a class="navbar-brand menuitems" id="logo" href="index.html"><img src="image/logonew.png"></a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarNavAltMarkup">
+              <div class="navbar-nav me-5 fw-bold">
+                <a href="index.html" class="nav-link menuitems ps-2">Home</a>
+                <a href="aries.html" class="nav-link menuitems ps-2">Zodiac Signs</a>
+                <a class="menuitems" href="#">
+                  <div class="dropdown">
+                    <a href="#" class="nav-link menuitems mx-2 dropdown-toggle text-white" data-bs-toggle="dropdown">Astrology</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="elements.html"class="dropdown-item">Elements</a></li>
+                      <li><a href="quality/quality.html"class="dropdown-item">Quality</a></li>
+                    </ul>
+                  </div>
+                </a>
+                <a class="menuitems" href="#">
+                  <div class="dropdown">
+                    <a href="#" class="nav-link menuitems mx-2 dropdown-toggle text-white" data-bs-toggle="dropdown">Items</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./gems.html" class="dropdown-item">Crystals</a></li>
+                      <li><a href="./color.html" class="dropdown-item">Colors</a></li>
+                    </ul>
+                  </div>
+                </a>
+                <a href="./contact.html" class="nav-link menuitems ps-2">Contact</a>
+              </div>
+              <div class="icons d-flex">
+                <a class="nav-link menuitems me-3" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a class="nav-link menuitems me-3" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="nav-link menuitems me-3" href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a class="nav-link menuitems m3-3" href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+      </div>
+  </nav> 
+  <!---------------------------- End nav bar-------------------------------------->
+
+  <!---------------------------- home section start ------------------------------->
+  <section class="home">
+    <div class="container-lg">
+      <div class="row min-vh-75 align-items-center">
+        <div class="col-sm-6 col-lg-5" >
+          <div class="text-center circle">
+            <img class="rounded-circle shadow-sm outercircle" src="./image/newCircle.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-7 order-md-first" id="title">
+          <div class="banner">
+            <div class="b1"><span class="a">A</span>strological Zone</div>
+            <!-- <div class="b2">Zone</div> -->
+            <div class="quote">
+               <div class="q1">"Let your sign guide you</div>
+                <div class="q2">when you feel like you've lost your way"</div>
+                <div class="button">
+                  <button type="button" id="btn-modal" class="btn fw-bolder">check your sign</button>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------------------------- Home section end --------------------------------------->
+
+  <!---------------------- Start Modal section ------------------------------------------------->
+  <div class="modal" id="loginmodal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <span class="btn-close"></span>
+        </div>
+        <div class="modal-body">
+          <form action="" method="">
+            <div class="form-group">
+              <label for="number">BirthDate :</label>
+              <input type="number" name="date" value="day" id="date" class="form-control" placeholder="Enter your birth date" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <label for="month">Birth Month :</label><br>
+                <select name="month" size="1" id="month" required>
+                  <option value="month" disabled selected hidden>Select Your birth month</option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+              </div>
+              <div class="d-grid">
+                <button type="button" id="btn" class="btn" onclick="display()">Check Sign</button>
+                <button type="reset" id="reset" class="reset">Reset</button>
+              </div> 
+              <p id="demo"></p>                    
+          </form>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------------- End Modal Section -------------------------------------------->
+
+   <!------------------------------------------- Sign section Start ----------------------------------------->
+  <div class="signsection">
+    <div class="row signs">
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./aries.html"><div class="demo"><img src="image/colorsigns/aries.jpg"><p>Aries</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./taurus.html"><div class="demo"><img src="image/colorsigns/taurus.jpg"><p>Taurus</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./gemini.html"><div class="demo"><img src="image/colorsigns/gemini.jpg"><p>Gemini</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./cancer.html"><div class="demo"><img src="image/colorsigns/cancer.jpg"><p>Cancer</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./leo.html"><div class="demo"><img src="image/colorsigns/leo.jpg"><p>Leo</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./virgo.html"><div class="demo"><img src="image/colorsigns/virgo.jpg"><p>Virgo</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./libra.html"><div class="demo"><img src="image/colorsigns/libra.jpg"><p>Libra</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./scorpio.html"><div class="demo"><img src="image/colorsigns/scorpio.jpg"><p>Scorpio</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./sagitaarius.html"><div class="demo"><img src="image/colorsigns/sagittarius.jpg"><p>Sagittarius</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./capricorn.html"><div class="demo"><img src="image/colorsigns/capricorn.jpg"><p>Capricorn</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./aquarius.html"><div class="demo"><img src="image/colorsigns/aquarius.jpg"><p>Aquarius</p></div></a>
+      </div>
+      <div class="col-3 col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <a href="./pisces.html"><div class="demo"><img src="image/colorsigns/pisces.jpg"><p>Pisces</p></div></a>
+      </div>
+    </div>        
+              
+    <div class="welcome">
+      <p class="w1">WELCOME TO OUR UNIVERSE</p>
+    </div>
+    <div class="container">
+      <div class="lines">
+        <div class="c1"></div>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p class="p1">In astrology, a sign of the zodiac refers to one of 12 specific constellations of the zodiac that the sun passes through. A person’s particular sign of the zodiac is the one that the sun was in when they were born. It is a belief in astrology that a person's personality can be predicted using their sign of the zodiac.</p>
+    </div>
+  </div>
+  <!---------------------------------- Sign section End ----------------------------->
+
+  <!------------------------------------ blog Slide section Start ---------------------------->
+
+  <div class="blogs" id="blogs">
+    <div class="blog1">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-lg-4 slider__container">
+            <div class="slider">
+                <img src="./image/slides/IMG_6322.PNG"/>
+                <img src="./image/slides/IMG_6323.PNG"/>
+                <img src="./image/slides/IMG_6324.PNG"/>
+                <img src="./image/slides/IMG_6325.PNG"/>
+                <img src="./image/slides/IMG_6326.PNG"/>
+                <img src="./image/slides/IMG_6327.PNG"/>
+                <img src="./image/slides/IMG_6328.PNG"/>
+                <img src="./image/slides/IMG_6329.PNG"/>
+                <img src="./image/slides/IMG_6330.PNG"/>
+                <img src="./image/slides/IMG_6331.PNG"/>
+                <img src="./image/slides/IMG_6332.PNG"/>
+                <img src="./image/slides/IMG_6333.PNG"/>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="slidetext">
+            <div class="text">
+              <p>Have You Ever Wondered...<br/>
+                What's your zodiac sign?<br/>
+                What are the names of the 12 zodiac signs?<br/>
+                What does your zodiac sign say about you?
+              </p>
+              <p>Your zodiac signs are the mirror of your personality. These are your birthday signs that tell who you are by birth and what characteristics you possess from the time you were born. By understanding zodiac sign meaning, you may know about your personality traits and explore the strengths and weaknesses.</p>
+              <p>So, if you want to know what your zodiac sign is and what kind of personality you have, you may check the date range of the zodiac sign and easily get an idea of the astrology sign that influences your personality.</p><br/>
+              <span class="follows">The 12 signs of the zodiac and their symbols are as follows :</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row signdate">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Aries — (March 21-April 19)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Taurus — (April 20-May 20)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Gemini — (May 21-June 20)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Cancer — (June 21-July 22)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Leo — (July 23-August 22)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Virgo — (August 23-September 22)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Libra — (September 23-October 22)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Scorpio — (October 23-November 21)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Sagittarius — (November 22-December 21)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Capricorn — (December 22-January 19)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Aquarius — (January 20-February 18)</div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="date">Pisces — (February 19-March 20)</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="gamebox p-5 justify-content-center">
+      <div class="gif">
+        <img src="./image/gift-box.gif" alt="">
+      </div>
+      <div class="text text-center">
+        <i class="fa-solid fa-angles-right fw-bold text-light fs-3 pe-2"></i>
+        
+        <a href="./game/game.html" class="text-decoration-none">Here is a Gift For You</a>
+        
+        <i class="fa-solid fa-angles-left fw-bold text-light fs-3 ps-2"></i>
+      </div>
+    </div>
+
+    <!------------------------------------- Start blog 2 ----------------------------------->
+
+    <div class="blog23">
+      <div id="blog2" class="row blog2">
+        <div class="col-sm-12 col-md-4 blog2title">
+          Chinese<br/> Zodiac<br/> Signs
+          <hr/>
+          <a href="https://www.oprahdaily.com/life/a35119928/chinese-zodiac-signs/" class="icon" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i> Website </a>
+          <a href="https://www.facebook.com" class="icon" target="_blank"><i class="bi bi-facebook"></i> Facebook </a>
+          <a href="https://www.instagram.com" class="icon" target="_blank"><i class="bi bi-instagram"></i> Instagram </a>
+        </div>
+        <div class="col-sm-12 col-md-4 blog2text">
+           The practice of Chinese astrology dates back thousands of years. As authors Gerry Maguire Thompson and Shuen-Lian Hsaio write in The Guide to Chinese Horoscopes, for the first 2000 years of recorded Chinese history, there wasn’t really a line between what we consider astrology and the scientific study that we know as astronomy. <a href="https://www.oprahdaily.com/life/a35119928/chinese-zodiac-signs/" target="_blank"> See More ...</a>
+        </div>
+        <div class="col-sm-12 col-md-4 blog2photo">
+          <img src="./image/chinese.jpg">
+        </div>
+      </div>
+  
+      <!-------------------------- blog 3 ---------------------------------->
+      <div id="blog3" class="row blog3">
+        <div class="col-sm-12 col-md-4 blog3photo">
+          <img src="./image/planet.jpg">
+        </div>
+        <div class="col-sm-12 col-md-4 blog3text">
+          Everyone’s fascination with astrology always begins with one simple fact—their zodiac sign. However, as you become more fluent in the language of the cosmos, you come to find that your zodiac sign is just one thin layer of who you are. Once you learn the meanings behind the many planets in astrology, things start to get way more interesting. <a href="https://stylecaster.com/lifestyle/love-sex/1274338/planets-in-astrology/" target="_blank"> See More ...</a>
+        </div>
+        <div class="col-sm-12 col-md-4 blog3title">
+          Planets <br/> In<br/> Astrology
+          <hr/>
+          <a href="https://stylecaster.com/lifestyle/love-sex/1274338/planets-in-astrology/" class="icon" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i> Website </a>
+          <a href="https://www.facebook.com" class="icon" target="_blank"><i class="bi bi-facebook"></i> Facebook </a>
+          <a href="https://www.instagram.com" class="icon" target="_blank"><i class="bi bi-instagram"></i> Instagram </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <!--------------------------------- blog section end ------------------------------>
+
+
+  <!----------------------------------- Start Footer Section ------------------------------------->
+
+  <div id="container-fluid">
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="logo">
+          <img src="./image/logo.png" alt="">
+        </div>
+        <div class="link">
+          <a href="./index.html">Home</a>
+          <a href="./aries.html">Zodiac Signs</a>
+          <a href="./elements.html">Astrology</a>
+          <a href="./gems.html">Items</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="follow">
+          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-5 ">
+        <div class="para">
+          <h3>Join Our Daily Overview</h3>
+          <blockquote>Your Astrological overview guides you on what to look
+            out for and how to act in tune with the stars and planets each day.
+          </blockquote>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3" id="last">
+        <div class="privacy"> 
+          <a href="privacy.com">Privacy Policy</a><br>
+          <a href="cookies.com">Cookies</a>
+        </div>
+        <div class="like">
+          <strong>Was this page helpful?</strong>
+          <i class="fa-regular fa-thumbs-up"></i>
+          <i class="fa-regular fa-thumbs-down"></i>
+        </div>
+        <div class="cross">
+          <p> <i class="fa-regular fa-circle-xmark"></i> Do not selling My personal info!</p>
+        </div>
+        <div class="copy">
+        <i>&copy; Copyright-2023 -All right reserved.</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------- End Footer Section --------------------------------->
+  
+</body>
+<script src="./app.js"></script>
+<!-- JS Bootstrap Link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+</html>
